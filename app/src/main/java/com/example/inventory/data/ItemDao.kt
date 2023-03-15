@@ -17,4 +17,5 @@ interface ItemDao {
 
     @Query("SELECT * from item WHERE id = :id")
     fun getItem(id: Int): Flow<Item>
+    abstract fun getItems(): Any
 }
